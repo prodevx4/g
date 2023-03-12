@@ -1,0 +1,440 @@
+<html>
+    <head>
+        <script>
+        document.addEventListener("DOMContentLoaded", function() {
+
+var loginButton = document.createElement('button');
+loginButton.innerHTML = 'Log in';
+document.body.appendChild(loginButton);
+
+loginButton.style.backgroundColor = 'blue';
+
+loginButton.style.float = 'right';
+
+loginButton.style.fontSize = '20px';
+
+loginButton.onclick = function() {
+  var username = document.createElement('input');
+  username.type = 'text';
+  username.placeholder = 'Username';
+  document.body.appendChild(username);
+  var password = document.createElement('input');
+  password.type = 'password';
+  password.placeholder = 'Password';
+  document.body.appendChild(password);
+  var getStarted = document.createElement('button');
+  getStarted.innerHTML = 'Get Started';
+  document.body.appendChild(getStarted);
+  var xButton = document.createElement('button');
+  xButton.innerHTML = 'X';
+  document.body.appendChild(xButton);
+  xButton.style.float = 'right';
+  xButton.style.backgroundColor = 'red';
+  xButton.onclick = function() {
+    document.body.removeChild(username);
+    document.body.removeChild(password);
+    document.body.removeChild(getStarted);
+    document.body.removeChild(xButton);
+  };
+};
+
+var signUpButton = document.createElement('button');
+signUpButton.innerHTML = 'Sign Up';
+document.body.appendChild(signUpButton);
+signUpButton.style.backgroundColor = 'green';
+signUpButton.style.float = 'right';
+signUpButton.style.fontSize = '20px';
+
+signUpButton.onclick = function() {
+  var signUp = document.createElement('div');
+  signUp.innerHTML = 'Sign Up';
+  document.body.appendChild(signUp);
+  var username = document.createElement('input');
+  username.type = 'text';
+  username.placeholder = 'Username';
+  document.body.appendChild(username);
+  var password = document.createElement('input');
+  password.type = 'password';
+  password.placeholder = 'Password';
+  document.body.appendChild(password);
+  var getStarted = document.createElement('button');
+  getStarted.innerHTML = 'Get Started';
+  document.body.appendChild(getStarted);
+  getStarted.style.backgroundColor = 'white';
+  getStarted.onclick = function() {
+    if (username.value === '' || password.value === '') {
+      var incorrect = document.createElement('div');
+      incorrect.innerHTML = 'Incorrect';
+      document.body.appendChild(incorrect);
+      incorrect.style.color = 'red';
+    } else {
+      var hello = document.createElement('div');
+      hello.innerHTML = 'Hello ' + username.value;
+      document.body.appendChild(hello);
+      loginButton.onclick = function() {
+        var username2 = document.createElement('input');
+        username2.type = 'text';
+        username2.placeholder = 'Username';
+        document.body.appendChild(username2);
+        var password2 = document.createElement('input');
+        password2.type = 'password';
+        password2.placeholder = 'Password';
+        document.body.appendChild(password2);
+        var getStarted2 = document.createElement('button');
+        getStarted2.innerHTML = 'Get Started';
+        document.body.appendChild(getStarted2);
+        var xButton2 = document.createElement('button');
+        xButton2.innerHTML = 'X';
+        document.body.appendChild(xButton2);
+        xButton2.style.float = 'right';
+        xButton2.style.backgroundColor = 'red';
+        xButton2.onclick = function() {
+          document.body.removeChild(username2);
+          document.body.removeChild(password2);
+          document.body.removeChild(getStarted2);
+          document.body.removeChild(xButton2);
+        };
+        getStarted2.onclick = function() {
+          if (username2.value === username.value && password2.value === password.value) {
+            var hello2 = document.createElement('div');
+            hello2.innerHTML = 'Hello ' + username2.value;
+            document.body.appendChild(hello2);
+          } else {
+            var incorrect2 = document.createElement('div');
+            incorrect2.innerHTML = 'Incorrect';
+            document.body.appendChild(incorrect2);
+            incorrect2.style.color = 'red';
+          }
+        };
+      };
+    }
+  };
+};
+
+loginButton.onclick = function() {
+  var username = document.createElement('input');
+  username.type = 'text';
+  username.placeholder = 'Username';
+  document.body.appendChild(username);
+  var password = document.createElement('input');
+  password.type = 'password';
+  password.placeholder = 'Password';
+  document.body.appendChild(password);
+  var getStarted = document.createElement('button');
+  getStarted.innerHTML = 'Get Started';
+  document.body.appendChild(getStarted);
+  var xButton = document.createElement('button');
+  xButton.innerHTML = 'X';
+  document.body.appendChild(xButton);
+  xButton.style.float = 'right';
+  xButton.style.backgroundColor = 'red';
+  xButton.onclick = function() {
+    document.body.removeChild(username);
+    document.body.removeChild(password);
+    document.body.removeChild(getStarted);
+    document.body.removeChild(xButton);
+  };
+  getStarted.onclick = function() {
+    var hello = document.createElement('div');
+    hello.innerHTML = 'Hello ' + username.value;
+    document.body.appendChild(hello);
+    document.body.removeChild(loginButton);
+    document.body.removeChild(signUpButton);
+  };
+};
+
+signUpButton.onclick = function() {
+  var signUp = document.createElement('div');
+  signUp.innerHTML = 'Sign Up';
+  document.body.appendChild(signUp);
+  var username = document.createElement('input');
+  username.type = 'text';
+  username.placeholder = 'Username';
+  document.body.appendChild(username);
+  var password = document.createElement('input');
+  password.type = 'password';
+  password.placeholder = 'Password';
+  document.body.appendChild(password);
+  var getStarted = document.createElement('button');
+  getStarted.innerHTML = 'Get Started';
+  document.body.appendChild(getStarted);
+  getStarted.style.backgroundColor = 'white';
+  var xButton = document.createElement('button');
+  xButton.innerHTML = 'X';
+  document.body.appendChild(xButton);
+  xButton.style.float = 'right';
+  xButton.style.backgroundColor = 'red';
+  xButton.onclick = function() {
+    document.body.removeChild(username);
+    document.body.removeChild(password);
+    document.body.removeChild(getStarted);
+    document.body.removeChild(xButton);
+  };
+  getStarted.onclick = function() {
+    if (username.value === '' || password.value === '') {
+      var incorrect = document.createElement('div');
+      incorrect.innerHTML = 'Incorrect';
+      document.body.appendChild(incorrect);
+      incorrect.style.color = 'red';
+    } else {
+      var hello = document.createElement('div');
+      hello.innerHTML = 'Hello ' + username.value;
+      document.body.appendChild(hello);
+      loginButton.onclick = function() {
+        var username2 = document.createElement('input');
+        username2.type = 'text';
+        username2.placeholder = 'Username';
+        document.body.appendChild(username2);
+        var password2 = document.createElement('input');
+        password2.type = 'password';
+        password2.placeholder = 'Password';
+        document.body.appendChild(password2);
+        var getStarted2 = document.createElement('button');
+        getStarted2.innerHTML = 'Get Started';
+        document.body.appendChild(getStarted2);
+        var xButton2 = document.createElement('button');
+        xButton2.innerHTML = 'X';
+        document.body.appendChild(xButton2);
+        xButton2.style.float = 'right';
+        xButton2.style.backgroundColor = 'red';
+        xButton2.onclick = function() {
+          document.body.removeChild(username2);
+          document.body.removeChild(password2);
+          document.body.removeChild(getStarted2);
+          document.body.removeChild(xButton2);
+        };
+        getStarted2.onclick = function() {
+          if (username2.value === username.value && password2.value === password.value) {
+            var hello2 = document.createElement('div');
+            hello2.innerHTML = 'Hello ' + username2.value;
+            document.body.appendChild(hello2);
+          } else {
+            var incorrect2 = document.createElement('div');
+            incorrect2.innerHTML = 'Incorrect';
+            document.body.appendChild(incorrect2);
+            incorrect2.style.color = 'red';
+          }
+        };
+      };
+    }
+  };
+};
+
+signUpButton.onclick = function() {
+  var signUp = document.createElement('div');
+  signUp.innerHTML = 'Sign Up';
+  document.body.appendChild(signUp);
+  var username = document.createElement('input');
+  username.type = 'text';
+  username.placeholder = 'Username';
+  document.body.appendChild(username);
+  var password = document.createElement('input');
+  password.type = 'password';
+  password.placeholder = 'Password';
+  document.body.appendChild(password);
+  var getStarted = document.createElement('button');
+  getStarted.innerHTML = 'Get Started';
+  document.body.appendChild(getStarted);
+  getStarted.style.backgroundColor = 'white';
+  var xButton = document.createElement('button');
+  xButton.innerHTML = 'X';
+  document.body.appendChild(xButton);
+  xButton.style.float = 'right';
+  xButton.style.backgroundColor = 'red';
+  xButton.onclick = function() {
+    document.body.removeChild(username);
+    document.body.removeChild(password);
+    document.body.removeChild(getStarted);
+    document.body.removeChild(xButton);
+    document.body.removeChild(signUp);
+  };
+  getStarted.onclick = function() {
+    if (username.value === '' || password.value === '') {
+      var incorrect = document.createElement('div');
+      incorrect.innerHTML = 'Incorrect';
+      document.body.appendChild(incorrect);
+      incorrect.style.color = 'red';
+    } else {
+      var hello = document.createElement('div');
+      hello.innerHTML = 'Hello ' + username.value;
+      document.body.appendChild(hello);
+      loginButton.onclick = function() {
+        var username2 = document.createElement('input');
+        username2.type = 'text';
+        username2.placeholder = 'Username';
+        document.body.appendChild(username2);
+        var password2 = document.createElement('input');
+        password2.type = 'password';
+        password2.placeholder = 'Password';
+        document.body.appendChild(password2);
+        var getStarted2 = document.createElement('button');
+        getStarted2.innerHTML = 'Get Started';
+        document.body.appendChild(getStarted2);
+        var xButton2 = document.createElement('button');
+        xButton2.innerHTML = 'X';
+        document.body.appendChild(xButton2);
+        xButton2.style.float = 'right';
+        xButton2.style.backgroundColor = 'red';
+        xButton2.onclick = function() {
+          document.body.removeChild(username2);
+          document.body.removeChild(password2);
+          document.body.removeChild(getStarted2);
+          document.body.removeChild(xButton2);
+        };
+        getStarted2.onclick = function() {
+          if (username2.value === username.value && password2.value === password.value) {
+            var hello2 = document.createElement('div');
+            hello2.innerHTML = 'Hello ' + username2.value;
+            document.body.appendChild(hello2);
+          } else {
+            var incorrect2 = document.createElement('div');
+            incorrect2.innerHTML = 'Incorrect';
+            document.body.appendChild(incorrect2);
+            incorrect2.style.color = 'red';
+          }
+        };
+      };
+    }
+  };
+};
+
+var button = document.createElement('button');
+button.innerHTML = '1';
+document.body.appendChild(button);
+button.style.borderRadius = '50%';
+button.style.backgroundColor = 'green';
+button.onclick = function() {
+  button.innerHTML = parseInt(button.innerHTML) + 1;
+};
+
+button.style.position = 'absolute';
+button.style.top = '50%';
+button.style.left = '50%';
+button.style.transform = 'translate(-50%, -50%)';
+
+button.style.fontSize = '50px';
+
+button.style.paddingTop = '10px';
+
+button.onclick = function() {
+  if (document.body.contains(loginButton) && document.body.contains(signUpButton)) {
+    alert('You need to log in');
+  } else {
+    button.innerHTML = parseInt(button.innerHTML) + 1;
+  }
+};
+
+var button2 = document.createElement('button');
+button2.innerHTML = '10';
+document.body.appendChild(button2);
+button2.style.borderRadius = '50%';
+button2.style.backgroundColor = 'green';
+button2.onclick = function() {
+  if (parseInt(button.innerHTML) >= 10) {
+    button.innerHTML = parseInt(button.innerHTML) - 10;
+    button.onclick = function() {
+      button.innerHTML = parseInt(button.innerHTML) + 2;
+    };
+  } else {
+    alert('You dont have enough points');
+  }
+};
+
+button2.style.borderRadius = '0%';
+button2.style.backgroundColor = 'brown';
+button2.innerHTML = '10 clicks for 2 clicks';
+
+button2.style.position = 'absolute';
+button2.style.top = '60%';
+button2.style.left = '50%';
+button2.style.transform = 'translate(-50%, -50%)';
+
+var button3 = document.createElement('button');
+button3.innerHTML = '50';
+document.body.appendChild(button3);
+button3.style.borderRadius = '50%';
+button3.style.backgroundColor = 'green';
+button3.onclick = function() {
+  if (parseInt(button.innerHTML) >= 50) {
+    button.innerHTML = parseInt(button.innerHTML) - 50;
+    button.onclick = function() {
+      button.innerHTML = parseInt(button.innerHTML) + 5;
+    };
+  } else {
+    alert('You dont have enough points');
+  }
+};
+
+button3.style.borderRadius = '0%';
+button3.style.backgroundColor = 'brown';
+button3.innerHTML = '50 clicks for 5 clicks';
+button3.style.position = 'absolute';
+button3.style.top = '70%';
+button3.style.left = '50%';
+button3.style.transform = 'translate(-50%, -50%)';
+
+var button4 = document.createElement('button');
+button4.innerHTML = '1000';
+document.body.appendChild(button4);
+button4.style.borderRadius = '50%';
+button4.style.backgroundColor = 'green';
+button4.onclick = function() {
+  if (parseInt(button.innerHTML) >= 1000) {
+    button.innerHTML = parseInt(button.innerHTML) - 1000;
+    button.onclick = function() {
+      button.innerHTML = parseInt(button.innerHTML) + 50;
+    };
+  } else {
+    alert('You dont have enough points');
+  }
+};
+
+button4.style.borderRadius = '0%';
+button4.style.backgroundColor = 'brown';
+button4.innerHTML = '1000 clicks for 50 clicks';
+button4.style.position = 'absolute';
+button4.style.top = '80%';
+button4.style.left = '50%';
+button4.style.transform = 'translate(-50%, -50%)';
+
+loginButton.onclick = function() {
+  var username = document.createElement('input');
+  username.type = 'text';
+  username.placeholder = 'Username';
+  document.body.appendChild(username);
+  var password = document.createElement('input');
+  password.type = 'password';
+  password.placeholder = 'Password';
+  document.body.appendChild(password);
+  var getStarted = document.createElement('button');
+  getStarted.innerHTML = 'Get Started';
+  document.body.appendChild(getStarted);
+  var xButton = document.createElement('button');
+  xButton.innerHTML = 'X';
+  document.body.appendChild(xButton);
+  xButton.style.float = 'right';
+  xButton.style.backgroundColor = 'red';
+  xButton.onclick = function() {
+    document.body.removeChild(username);
+    document.body.removeChild(password);
+    document.body.removeChild(getStarted);
+    document.body.removeChild(xButton);
+  };
+  getStarted.onclick = function() {
+    var hello = document.createElement('div');
+    hello.innerHTML = 'Hello ' + username.value;
+    document.body.appendChild(hello);
+    document.body.removeChild(loginButton);
+    document.body.removeChild(signUpButton);
+    button.onclick = function() {
+      if (document.body.contains(loginButton) && document.body.contains(signUpButton)) {
+        alert('You need to log in');
+      } else {
+        button.innerHTML = parseInt(button.innerHTML) + 1;
+      }
+    };
+  };
+};
+});
+        </script>
+    </head>
